@@ -1,0 +1,4 @@
+---
+templateKey: 'landing'
+path: /landing
+---
