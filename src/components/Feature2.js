@@ -5,7 +5,7 @@ const Feature2 = ({
 }) => {
     return (
         <div className="py-4 d-inline-block">
-            <h1 className="mb-0 text-center">{title}</h1>
+            <h1 className="mb-0 text-center text-muted font-weight-bold">{title}</h1>
             <div className="w-100">
                 <div 
                     style={{backgroundColor: "#17a4d6", height: "4px", width: "40%"}}

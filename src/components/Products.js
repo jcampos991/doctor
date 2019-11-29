@@ -5,6 +5,8 @@ import { Carousel } from 'react-responsive-carousel';
 
 const Item = ({
     name,
+    image,
+    alt,
     url
 }) => {
     return (
@@ -13,11 +15,17 @@ const Item = ({
             className="d-flex justify-content-between align-items-center bg-info px-4 py-3">
             <div className="d-flex align-items-center">
                 <div
-                    style={{width: "5rem", height: "5rem"}} 
-                    className="bg-white rounded-circle mr-3">
+                    className="framew d-flex align-items-center justify-content-center bg-white rounded-circle mr-sm-3">
+                        <img 
+                            src={image}
+                            alt={alt}
+                            className="framew__img img-fluid"
+                            />
                 </div>
                 <span
-                    className="font-weight-bold text-white">{name}</span>
+                    className="framew__desc font-weight-bold text-white">
+                    {name}
+                </span>
             </div>
             <button 
                 style={{backgroundColor: "#71ffd2"}}
@@ -90,7 +98,11 @@ const Products = ({
                             <div
                                 key={`proditem${index}`} 
                                 className="col-lg-6 mb-4">
-                                <Item name={item.name} />
+                                <Item 
+                                    name={item.name} 
+                                    image={item.image}
+                                    alt={item.alt}
+                                    />
                             </div>
                         ))
                     }
@@ -108,7 +120,11 @@ const Products = ({
                                         <div
                                             key={`proditem3${index}${index2}`}
                                             className="col-md-6 mb-5">
-                                            <Item name={elem.name} />
+                                            <Item 
+                                                name={elem.name}
+                                                image={elem.image}
+                                                alt={elem.alt} 
+                                                />
                                         </div>
                                     ))
                                 }
@@ -124,37 +140,37 @@ const Products = ({
 Products.defaultProps = {
     title: "PRODUCTOS",
     items: [{
-        image: "/img/test1.png",
+        image: "/img/icon-fajas.svg",
         alt: "testimonial 1",
         name: "Fajas",
         url: "/",
     },{
-        image: "/img/test1.png",
+        image: "/img/icon-brasier-band.svg",
         alt: "testimonial 1",
         name: "Bandas de brasier",
         url: "/",
     },{
-        image: "/img/test1.png",
+        image: "/img/icon-table-abd.svg",
         alt: "testimonial 1",
         name: "Tablas abdominales",
         url: "/",
     },{
-        image: "/img/test1.png",
+        image: "/img/icon-medias.svg",
         alt: "testimonial 1",
         name: "Medias anti embólicas o de compresión",
         url: "/",
     },{
-        image: "/img/test1.png",
+        image: "/img/icon-espumas.svg",
         alt: "testimonial 1",
         name: "Espumas",
         url: "/",
     },{
-        image: "/img/test1.png",
+        image: "/img/icon-mentonera.svg",
         alt: "testimonial 1",
         name: "Mentoneras",
         url: "/",
     },{
-        image: "/img/test1.png",
+        image: "/img/icon-brasier.svg",
         alt: "testimonial 1",
         name: "Brasiers",
         url: "/",

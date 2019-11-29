@@ -5,7 +5,9 @@ import { withPrefix } from 'gatsby'
 import Header from './Header'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import './all.sass'
+import './css/general.css';
 import './css/utilities.css';
+import './css/components.css';
 import './css/object.css';
 
 const TemplateWrapper2 = ({ children }) => {

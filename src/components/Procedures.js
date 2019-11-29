@@ -72,7 +72,7 @@ const Procedures = ({
                             <div
                                 style={{backgroundColor: "#f4f5fa"}} 
                                 className="w-50 d-flex flex-column justify-content-center ml-2 px-5 py-3 h-100">
-                                <h3>
+                                <h3 className="text-muted font-weight-bold">
                                     {selected.content.title}
                                 </h3>
                                 <PerfectScrollbar>
@@ -227,7 +227,7 @@ Procedures.defaultProps = {
             }]
         }
     },{
-        image: "/img/proc4.png",
+        image: "/img/proc4.svg",
         alt: "procedure 4",
         to: "/",
         isDefault: true,

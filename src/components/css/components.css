@@ -1,0 +1,11 @@
+/* PRODUCTS */
+
+#products .framew {
+    width: 5rem;
+    height: 5rem;
+}
+
+#products .framew__img {
+    width: 3rem;
+    height: 3rem;
+}
