@@ -9,8 +9,9 @@ import './css/general.css';
 import './css/utilities.css';
 import './css/components.css';
 import './css/object.css';
+import Footer2 from './Footer2'
 
-const TemplateWrapper2 = ({ children }) => {
+const TemplateWrapper2 = ({ children, location }) => {
   const { title, description } = useSiteMetadata()
 
   useEffect(() => {
@@ -58,8 +59,9 @@ const TemplateWrapper2 = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <Header />
+      <Header location={location} />
       <div>{children}</div>
+      <Footer2 />
     </div>
   )
 }

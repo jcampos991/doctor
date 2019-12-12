@@ -1,3 +1,19 @@
+/* IMAGES */
+
+.border-image {
+    border: 3px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(90deg, #fff, #fff), linear-gradient(115deg, #71ffd2, #075ecf);
+}
+
+/* HEADER */
+#header .navbar-nav a.active {
+    color: #17a4d6 !important;
+    border-bottom: 1px solid #17a4d6;
+}
+
+
 /* PRODUCTS */
 
 #products .framew {
@@ -9,6 +25,34 @@
     width: 3rem;
     height: 3rem;
 }
+
+#product .framew {
+    width: 4rem;
+    height: 4rem;
+}
+
+#product .framew__img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#product .framew-big {
+    width: 5rem;
+    height: 5rem;
+}
+
+#product .framew-big__img {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* SOCIAL NETWORKS */
+
+#social-networks img {
+    width: 4rem;
+    height: 4rem;
+}
+
 
 /* JUMBO */
 
@@ -29,4 +73,134 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+/* PROFILE */
+
+#profile .profile__content {
+    width: 50%;
+    position: absolute;
+    top: 5rem; 
+    left: 3rem;
+    z-index: 100;
+}
+
+#profile .profile__content-text {
+    color: white; 
+    line-height: 45px;
+    font-size: 20px;
+}
+
+
+/* BLOG */
+
+.blog-page .blog-page__content {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.blog-page .blog-page__content h1 { 
+    font-size: 3rem;
+}
+
+.blog-page .blog-page__content .icon-meta { 
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+.blog-page .blog-page__content__meta { 
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    opacity: .68;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* BLOG POST */
+
+#blog-post .jumbotron img {
+    object-fit: cover;
+    height: 392px;
+} 
+
+#blog-post .border-image {
+    width: 250px !important;
+    height: 250px !important;
+} 
+
+#blog-post .border-image img {
+    width: 200px !important;
+} 
+
+#blog-post .icon-meta {
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* FORM SECTION */
+
+#form .container-form {
+    padding-top: .8rem !important;
+    border-radius: 25px;
+}
+
+#form .form-hubspot {
+    width: 320px;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: #014158;
+    border-radius: 15px;
+    color: white;
+}
+
+#form .form-hubspot input, #form .form-hubspot select { 
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: 0.09px;
+    text-align: left;
+    color: #6e6e6e;
+}
+
+
+/* PROCEDURE */
+
+#procedure .procedure__title {
+    font-size: 60px !important;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100; 
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: white;
+    font-size: 3rem !important;
+}
+
+
+/* PROCEDURE DETAIL */
+
+#proc-detail .proc-detail__content {
+    padding: 0 8rem !important;
+}
+
+#proc-detail .proc-detail__content-text {
+    font-size: 1.5rem !important;
+    line-height: 40px;
+}
+
+#proc-detail .proc-detail__img {
+    object-fit: cover;
+    height: auto;
+    width: 55%;
 }

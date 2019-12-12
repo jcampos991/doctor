@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster&display=swap');
+
+/* @font-face {
+    font-family: 'Lato', sans-serif;
+    font-display: fallback;
+    src: url('/fonts/Lato-Regular.ttf');
+} */
+
 body {
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-stretch: normal;
     font-style: normal;
+}
+
+.color-white {
+    color: white;
 }

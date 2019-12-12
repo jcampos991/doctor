@@ -1,11 +1,16 @@
 import React from 'react'
 
 const Feature2 = ({
-    title
+    title,
+    style,
+    className = "text-muted"
 }) => {
     return (
-        <div className="py-4 d-inline-block">
-            <h1 className="mb-0 text-center text-muted font-weight-bold">{title}</h1>
+        <div
+            className={`py-4 d-inline-block`}>
+            <h1 
+                className={`mb-0 text-center font-weight-bold ${className}`}
+                style={style}>{title}</h1>
             <div className="w-100">
                 <div 
                     style={{backgroundColor: "#17a4d6", height: "4px", width: "40%"}}

@@ -1,10 +1,73 @@
+/* TV */
+@media (min-width: 2304px) { 
+    /* PROFILE */
+
+    #profile .profile__content {
+        top: 5rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+
+    /* PROCEDURE DETAIL */
+
+    #proc-detail .proc-detail__content {
+        width: 1024px;
+        top: 0;
+        left: 50%;
+        transform: translate(50%, 0);
+        padding: 0 3rem !important;
+    }
+}
+
+@media (max-width: 1392px) { 
+    #proc-detail .proc-detail__content {
+        padding: 0 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* PROFILE */
+
+    #profile .profile__content-text {
+        color: white; 
+        line-height: 30px !important;
+        font-size: 1rem !important;
+    }
+
+
+    /* BLOG */
+
+    .blog-page .blog-page__content h1 { 
+        font-size: 2rem;
+    }
+
+    .blog-page .blog-page__content { 
+        width: 80%;
+    }
+
+
+    /* PROCEDURE DETAIL */
+
+    #proc-detail .proc-detail__content {
+        padding: 0 3rem !important;
+    }
+
+    #proc-detail .proc-detail__img {
+        width: 100%;
+    }
+}
+
 /* MOBILE */
+
 @media (max-width: 576px) {
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
+
     h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     /* PRODUCTS */
@@ -21,5 +84,53 @@
     #products .framew__desc {
         font-size: .9rem;
         width: 5rem !important;
+    }
+
+    /* SOCIAL NETWORKS */
+
+    #social-networks img {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
+    /* PROFILE */
+
+    #profile .profile__content {
+        top: 1rem;
+        left: 2rem;
+        width: 80%;
+    }
+
+    #profile .profile__content-text {
+        color: white; 
+        line-height: 20px !important;
+        font-size: 14px !important;
+    }
+
+    /* BLOG */
+
+    .blog-page { 
+        height: 392px;
+    }
+
+    .blog-page .blog-page__content { 
+        width: 80%;
+    }
+
+    .blog-page .blog-page__content__meta { 
+        font-size: 10px;
+    }
+
+    .blog-page .blog-page__content .icon-meta { 
+        width: .6rem;
+        margin-right: .6rem;
+    }
+
+    .blog-page img {
+        height: inherit;
+    }
+    
+    .blog-page .blog-page__content h1 { 
+        font-size: 1.5rem;
     }
 }

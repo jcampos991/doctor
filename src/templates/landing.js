@@ -9,16 +9,17 @@ import Comments from '../components/Comments'
 import Products from '../components/Products'
 import BlogSection from '../components/BlogSection';
 
-const Landing = () => {
+const Landing = ({
+  location
+}) => {
   return (
-    <TemplateWrapper2>
+    <TemplateWrapper2 location={location}>
         <section
           id="jumbo" 
           className="jumbotron jumbotron-fluid p-0 m-0 position-relative">
           <img 
-              // style={{zIndex: "-100"}}
               className="jumbo__cover w-100 h-100"
-              src="/img/cover.svg"
+              src="/img/cover.png"
               alt="cover" />
             {/* <div
               className="jumbo__desc text-white font-weight-bold text-uppercase position-absolute">

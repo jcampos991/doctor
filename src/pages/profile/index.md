@@ -1,0 +1,4 @@
+---
+templateKey: 'profile'
+path: /profile
+---

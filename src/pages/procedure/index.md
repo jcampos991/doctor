@@ -1,0 +1,4 @@
+---
+templateKey: 'procedure'
+path: /procedure
+---

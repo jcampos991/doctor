@@ -4,6 +4,7 @@ import 'react-perfect-scrollbar/dist/css/styles.css';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import ButtonMore from './ButtonMore';
 
 const Procedures = ({
     className,
@@ -94,14 +95,9 @@ const Procedures = ({
                                     </ul>
                                 </PerfectScrollbar>
                                 <div className="d-flex">
-                                    <button 
-                                        type="button" 
-                                        className="btn btn-sm btn-info text-capitalize px-4 font-weight-bold">
-                                        Ver mas
-                                        <span
-                                            style={{width: "18px", height: "18px"}} 
-                                            className="d-inline-flex align-items-center justify-content-center border rounded-circle ml-2">+</span>
-                                    </button>
+                                    <ButtonMore 
+                                        className="btn btn-sm btn-info px-4 font-weight-bold mt-3"
+                                        to="/procedure" />
                                 </div>
                             </div>
                         )
@@ -146,14 +142,9 @@ const Procedures = ({
                                         }
                                     </ul>
                                     <div className="d-flex mb-4">
-                                        <button 
-                                            type="button" 
-                                            className="btn btn-sm btn-info text-capitalize px-4 font-weight-bold mx-auto">
-                                            Ver mas
-                                            <span
-                                                style={{width: "18px", height: "18px"}} 
-                                                className="d-inline-flex align-items-center justify-content-center border rounded-circle ml-2">+</span>
-                                        </button>
+                                        <ButtonMore 
+                                            className="btn btn-sm btn-info text-capitalize px-4 font-weight-bold mx-auto"
+                                            to="/procedure" />
                                     </div>
                                 </div>
                             </div>

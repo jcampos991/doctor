@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Feature2 from './Feature2';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { Link } from 'gatsby';
 
 const Item = ({
     name,
@@ -27,24 +28,24 @@ const Item = ({
                     {name}
                 </span>
             </div>
-            <button 
+            <Link 
+                to={`/product/#${name}`}
                 style={{backgroundColor: "#71ffd2"}}
-                type="button" 
                 className="btn px-4 text-muted d-none d-md-block">
                 Ver mas
                 <span
                     style={{width: "18px", height: "18px", border: "solid 1px #707070"}} 
                     className="d-inline-flex align-items-center justify-content-center rounded-circle ml-2">+</span>
-            </button>
-            <button 
+            </Link>
+            <Link 
                 style={{backgroundColor: "#71ffd2"}}
-                type="button" 
+                to={`/product/#${name}`} 
                 className="btn btn-sm px-4 text-muted d-block d-md-none">
                 Ver mas
                 <span
                     style={{width: "18px", height: "18px", border: "solid 1px #707070"}} 
                     className="d-inline-flex align-items-center justify-content-center rounded-circle ml-2">+</span>
-            </button>
+            </Link>
         </div>
     )
 }
@@ -172,7 +173,12 @@ Products.defaultProps = {
     },{
         image: "/img/icon-brasier.svg",
         alt: "testimonial 1",
-        name: "Brasiers",
+        name: "Brasier quirurigico",
+        url: "/",
+    }, {
+        image: "/img/icon-post-operatory.svg",
+        alt: "Medicamentos post operatorio",
+        name: "Medicamentos post operatorio",
         url: "/",
     }]
 }

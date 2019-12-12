@@ -19,13 +19,17 @@ const links = [{
     to: "#blog"
 }];
 
-const Header = () => {
+const Header = ({
+    location
+}) => {
     return (
-        <>
+        <div id="header">
             <ScrollspyNav
-                scrollTargetIds={["procedures", "testimonials", "products", "blog"]}
+                scrollTargetIds={["presentation", "procedures", "testimonials", "products", "blog"]}
             >
-                <nav className="navbar navbar-expand-lg navbar-light px-5">
+                <nav 
+                    style={{boxShadow: "0 2.5px 2px 0 rgba(0, 0, 0, 0.09)"}}
+                    className="navbar navbar-expand-lg navbar-light px-5 border-bottom">
                     <Link className="navbar-brand" to="/">
                         <img
                             width="150" 
@@ -44,29 +48,39 @@ const Header = () => {
                         aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                     </button>
-                    
-                        <div 
-                            className="collapse navbar-collapse" 
-                            id="navbarSupportedContent">
-                            
-                                <ul className="navbar-nav ml-auto align-items-center">
-                                    {
-                                        links.map((item, index) => (
-                                            <li 
-                                                key={`link${index}`}
-                                                className="nav-item ml-md-4">
-                                                <a className="nav-link active" href={item.to}>{item.name}</a>
-                                            </li>
-                                        ))
-                                    }
-                                </ul>
-                            <button 
-                                type="button" 
-                                className="btn btn-sm btn-info text-capitalize px-4 font-weight-bold d-flex mx-auto ml-lg-4 mr-lg-0">
-                                agendar cita
-                            </button>
-                        </div>
-                    
+                    <div 
+                        className="collapse navbar-collapse" 
+                        id="navbarSupportedContent">
+                        <ul className="navbar-nav ml-auto align-items-center">
+                            {
+                                links.map((item, index) => (
+                                    <li 
+                                        key={`link${index}`} 
+                                        className="nav-item ml-md-4">
+                                        <a
+                                            href={item.to}
+                                            className={`nav-link ${location.pathname === item.to ? "active" : ""} text-muted font-weight-bold pb-0`}>
+                                            {item.name}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                        <button 
+                            style={{top: "5px"}}
+                            type="button" 
+                            className="btn btn-sm btn-info position-relative text-capitalize px-4 font-weight-bold d-flex mx-auto ml-lg-4 mr-lg-0">
+                            <ScrollspyNav 
+                                scrollTargetIds={["form"]}
+                                scrollDuration="1000">
+                                <a 
+                                    style={{color: "white"}}
+                                    href="#form">
+                                    solicitar información
+                                </a>
+                            </ScrollspyNav>
+                        </button>
+                    </div>
                 </nav>
             </ScrollspyNav>
 
@@ -93,7 +107,7 @@ const Header = () => {
                         agendar cita
                     </button>
                 </div> */}
-        </>
+        </div>
     )
 }
 
